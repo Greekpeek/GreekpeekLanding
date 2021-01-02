@@ -8,117 +8,156 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Greekpeek - The App for Greeks</title>
+  <title>Coming Soon - Greekpeek Mobile App</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-
-  <!-- Plugin CSS -->
-  <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
   <!-- Custom styles for this template -->
-  <link href="css/new-age.min.css" rel="stylesheet">
+  <link href="css/coming-soon.min.css" rel="stylesheet">
+  <style>
+  
+#clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #02867E;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #02BAAF;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
+
+
+.masthead {
+        z-index: 100 !important;
+        /* width: 30% !important; */
+      }
+
+      @media (min-width: 768px) {
+        .masthead {
+          z-index: 100 !important;
+          width: 30% !important;
+        }
+      }
+
+      .masthead .masthead-bg {
+        transform: none !important;
+      }
+
+      .overlay {
+        z-index: 80 !important;
+        opacity: 0.1 !important;
+      }
+
+      body {
+        /* The image used */
+        background-image: url("img/bg1.jpg");
+
+        z-index: 790;
+        /* Full height */
+        /* height: 100%; */
+
+        /* Center and scale the image nicely */
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+
+  </style>
 
 </head>
 
-<body id="page-top">
+<body>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Greekpeek</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#download">Download</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#features">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-        </ul>
+   <!-- The Modal -->
+   <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Thank you!</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Thank you for signing up! Check your email for updates to know when our new app is released and when our site launches!
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
       </div>
     </div>
-  </nav>
+  </div>
 
-  <header class="masthead">
+  <!-- <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="mp4/bg.mp4" type="video/mp4">
+  </video> -->
+
+  <div class="masthead">
+    <div class="masthead-bg"></div>
     <div class="container h-100">
       <div class="row h-100">
-        <div class="col-lg-7 my-auto">
-          <div class="header-content mx-auto">
-            <div>
-              <img src="img/Logo.png" class="img-fluid w-75 p-3" style="margin-bottom: -2em; margin-top: -3em;"  alt="Greekpeek!"/>
-            </div>
-            <h2 class="mb-5">INTRODUCING
-              GREEKPEEK:
-              THE APP FOR GREEKS</h2>
-            <h3 class="mb-5">Greekpeek is an app that will help all greek lettered individuals in exploring, finding, connecting greeks by sharing their personal profiles and activities.</h3>
-            <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
-          </div>
-        </div>
-        <div class="col-lg-5 my-auto">
-          <div class="device-container">
-            <div class="device-mockup iphone6_plus portrait white">
-              <div class="device">
-                <div class="screen">
-                  <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                  <img src="img/ss_1.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="button">
-                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                </div>
+        <div class="col-12 my-auto">
+          <div class="masthead-content text-white py-5 py-md-0">
+            <!--<h2 id="demo"></h2>-->
+            <!-- <div id="clockdiv">
+              <div>
+                <span class="days"></span>
+                <div class="smalltext">Days</div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <section class="about bg-primaryy text-center" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 mx-auto">
-       <h2>About Us</h2>
-       <h3>Our Background</h3><br/>
-        As greek alumni we have searched for a way to connect with our fellow greek organization members and found none. So we decided to build one. By having a platform solely for connecting greek letter individuals in the same organization and beyond, we can all continue to connect and strengthen our networks beyond the college campus experience. And in doing so contribute to helping greek life continue to grow  both on college campuses and in the alumni experience.       
-        <br/>
-        With our simply philosophy to help Greeks see, find and connect with one another, the opportunities are endless for growing your network with fellow greek letter individuals.</h5>
-        </div>
-        <div class="col-md-6 mx-auto">
-          <div class="embed-responsive embed-responsive-4by3">
-          <video controls>
-            <source src="mp4/InfoVid.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="download bg-primary-teal text-center" id="download">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 mx-auto">
-          <h2 class="section-heading">Reconnect with Greeks - Alumni, College, etc.!</h2>
-          <p>Our app will soon be available on any mobile device! Enter your email and we will contact you on all Greekpeek updates!</p>
-          <div>
-            <form id="canvasF" action="" method="post">
+              <div>
+                <span class="hours"></span>
+                <div class="smalltext">Hours</div>
+              </div>
+              <div>
+                <span class="minutes"></span>
+                <div class="smalltext">Minutes</div>
+              </div>
+              <div>
+                <span class="seconds"></span>
+                <div class="smalltext">Seconds</div>
+              </div>
+            </div> -->
+            
+            <br /><br />
+            <h1 class="mb-3">Greeks Get Ready!</h1>
+            <p class="mb-5">
+              We're about to release the best mobile app for Greeks to connect
+              around the world <strong>this month</strong>! Sign up below to
+              be the first to try it out!
+            </p>
+
+              <form id="canvasF" action="" method="post">
               <div class="input-group input-group-newsletter">
               <input type="email" class="form-control" required name="email" id="email" placeholder="Enter email..." aria-label="Enter email..." aria-describedby="basic-addon">
               <div class="input-group-append">
@@ -127,167 +166,113 @@
             </div>
               </form>
           </div>
-          <!-- <div class="badges">
-            <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
-            <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
-          </div> -->
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="features" id="features">
-    <div class="container">
-      <div class="section-heading text-center">
-        <h2>Great Features, Great Friends</h2>
-        <p class="text-muted">Check out what you can do with this app!</p>
-        <hr>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 my-auto">
-          <div class="device-container">
-            <div class="device-mockup iphone6_plus portrait white">
-              <div class="device">
-                <div class="screen">
-                  <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                  <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="button">
-                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-8 my-auto">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="feature-item">
-                  <i class="icon-screen-smartphone text-primary"></i>
-                  <h3>See Greeks</h3>
-                  <p class="text-muted">See who’s close by in your organization and others!</p>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="feature-item">
-                  <i class="icon-camera text-primary"></i>
-                  <h3>Find Greeks</h3>
-                  <p class="text-muted">Find your fellow Greeks using organization filters. Additional filters will be coming soon!</p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="feature-item">
-                  <i class="icon-present text-primary"></i>
-                  <h3>Connect With Greeks</h3>
-                  <p class="text-muted">Connect with messages to revitalize old bonds, and create new ones!</p>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="feature-item">
-                  <i class="icon-lock-open text-primary"></i>
-                  <h3>Spread the Word!</h3>
-                  <p class="text-muted">Help get the word out to the Greek Community, follow us on our social media platforms below!</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta">
-    <div class="cta-content">
-      <div class="container">
-        <h2>Stop waiting.<br>Start building.</h2>
-        <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
-      </div>
-    </div>
-    <div class="overlay"></div>
-  </section>
-
-  <section class="contact bg-primary-teal" id="contact">
-    <div class="container">
-      <h2>We
-        <i class="fas fa-heart"></i>
-        new friends!</h2>
-        <h3>Follow Us on Social Media</h3>
-      <ul class="list-inline list-social">
-        <!-- <li class="list-inline-item social-twitter">
-          <a href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </li>
-        <li class="list-inline-item social-facebook">
-          <a href="#">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-        </li> -->
-        <li class="list-inline-item social-instagram">
-          <a href="https://www.instagram.com/thegreekpeekapp/">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; Greekpeek LLC 2020. All Rights Reserved.</p>
-      <!-- <ul class="list-inline">
-        <li class="list-inline-item">
-          <a href="#">Privacy</a>
-        </li>
-        <li class="list-inline-item">
-          <a href="#">Terms</a>
-        </li>
-        <li class="list-inline-item">
-          <a href="#">FAQ</a>
-        </li>
-      </ul> -->
-    </div>
-  </footer>
-
-
-     <!-- The Modal -->
-     <div class="modal fade" id="myModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-        
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title">Thank you!</h4>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          
-          <!-- Modal body -->
-          <div class="modal-body">
-            Thank you for signing up! Check your email for updates to know when our new app is released and when our site launches!
-          </div>
-          
-          <!-- Modal footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-          
-        </div>
-      </div>
-    </div>
+  <!--
+  <div class="social-icons">
+    <ul class="list-unstyled text-center mb-0">
+      <li class="list-unstyled-item">
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li class="list-unstyled-item">
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+      <li class="list-unstyled-item">
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+-->
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
   <!-- Custom scripts for this template -->
-  <script src="js/new-age.min.js"></script>
-  <script src="js/EmailSubmit.js"></script>
+  <script src="js/coming-soon.min.js"></script>
+  <script>
+
+$(function() {
+    
+
+// Set up an event listener for the contact form.
+$("#canvasF").submit(function(event) {
+    // Stop the browser from submitting the form.
+    event.preventDefault();
+
+    // TODO
+
+    var element = document.getElementById('email').value;
+    var forms = { "Email": element}
+    $.ajax({
+            type: "post",
+            url: "https://greekpeekapi.azurewebsites.net/api/Prerollment/EnrollForUpdate",
+            data: JSON.stringify(forms),
+            contentType: "application/json",
+            success: function(responseData, textStatus, jqXHR) {
+              $('#myModal').modal('show');
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                console.log(errorThrown);
+            }
+        })
+});
+
+});
+  
+  </script>
+    <script>
+    function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+var deadline = new Date(Date.parse(new Date(2020,2,15,0,0,0,0)) + 0 * 24 * 60 * 60 * 1000);
+//initializeClock('clockdiv', deadline);
+    </script>
 
 </body>
 
