@@ -19,6 +19,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
   <!-- Plugin CSS -->
   <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
@@ -199,11 +200,20 @@
     </div>
   </section>
 
-  <section class="cta">
+  <section class="ctaw">
     <div class="cta-content">
       <div class="container">
-        <h2>Stop waiting.<br>Start building.</h2>
-        <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
+
+        <img class="mySlides w3-animate-fading" src="img/Promo/gp1.jpg" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="img/Promo/gp2.jpg" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="img/Promo/gp3.jpg" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="img/Promo/gp5.jpg" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="img/Promo/gp6.jpg" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="img/Promo/gp7.jpg" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="img/Promo/gp8.jpg" style="width:100%">
+
+
+
       </div>
     </div>
     <div class="overlay"></div>
@@ -237,7 +247,7 @@
 
   <footer>
     <div class="container">
-      <p>&copy; Greekpeek LLC 2020. All Rights Reserved.</p>
+      <p>&copy; Greekpeek LLC 2021. All Rights Reserved.</p>
       <!-- <ul class="list-inline">
         <li class="list-inline-item">
           <a href="#">Privacy</a>
@@ -281,6 +291,29 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+  <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 5000);    
+    }
+    </script>
+
+
+
+
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
